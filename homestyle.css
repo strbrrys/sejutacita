@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFFCFC;
+}
+
+header img {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #0457C0;
+    position: sticky;
+    top: 0;
+}
+
+.logo img {
+    width: 8.75rem;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+.menu_item li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.current_page a {
+    color: #F9E14C;
+}
+
+.right_menu a{
+    padding: 5px 15px;
+}
+
+.cta_signup{
+    border: solid 1.5px;
+    border-color: #F9E14C;
+    border-radius: 20px;
+    color: #F9E14C;
+}
+
+.cta_signup a{
+    padding: 10px 10px;
+}
+
+footer {
+    background-color: #0457C0;
+    padding: 50px 20px 5px 20px;
+}
+
+footer p {
+    color: #FFFCFC;
+    /* font-weight: 100; */
+}
+
+/* main */
+
+main {
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+}
+
+.discussion {
+    margin-right:auto;
+}
+
+
+
+
+/* ------------------- HALAMAN HOME ------------------- */
+
+/* div 1 -> bagian banner */
+.main-home {
+    margin: 0px;
+    padding: 0px;
+    display:inline;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+}
+
+.teks-banner {
+    text-align: center;
+}
+
+.h1putih {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+.h1kuning {
+    color: #FFE55B;
+    font-size: 50px;
+    margin-top: 5px;
+
+}
+
+.btn-banner {
+    background-color: #0457C0;
+    color: white;
+    font-size: 20px;
+    width: 20%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn-banner:hover {
+    color: #ECC601;
+    font-weight: bold;
+}
+
+.banner-foto {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.teks-banner {
+    width: 90%;
+    margin: 50px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+}
+
+/* div 2 -> bagian categories */
+.h2-subjudul {
+    font-size: 28px;
+}
+
+.break {
+    border-color: #0457C0;
+    width: 100px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    border-width: 2px;
+}
+
+.teks-category {
+    text-align: center;
+}
+
+.logo-icon {
+    height: 150px;
+    border-radius: 100px;
+}
+
+.h2icon {
+    color: #0457C0;
+    margin-top: 5px;
+}
+
+.logo-category {
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.logo-category:hover {
+    transform: scale(1.15);
+}
+
+.group-logo {
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* div 3 -> bagian latest news */
+.latestNews {
+    margin: 50px;
+}
+
+
+/* .group-news {
+    display: flex;
+}
+
+.news-box {
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin-right: 40px;
+    max-width: 500px;
+    
+} */
+
+.h2-news {
+    color: #0457C0;    
+}
+
+.p-tgl {
+    color: #ECC601;
+    font-weight: 500;
+    margin: 0px 0px;
+    font-size: 10px;
+}
+
+.foto-news {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* div 4 -> bagian quote */
+.quote {
+    background-color: #D8EBFF;
+    height: 150px;
+}
+
+.h1-quote {
+    color: #0457C0;
+    font-style: italic;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* div 5 -> bagian donation */
+.donation-box {
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin: 20px 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.donation-side {    
+    display: flex;
+}
+
+.btn-donate {
+    background-color: #0457C0;
+    color: white;
+    width: 100%;
+    margin: 0px;
+    font-size: 20px;
+    padding-left: 25px;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    display: flex;
+    /* position:relative; */
+    margin-top: auto;
+}
+
+.btn-donate:hover {
+    color: #ECC601;
+    font-weight: bold;
+}
+
+.h2-news {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.news-box > p{
+    padding: 0 20px;
+}
+
+.donation-side  p {
+    padding: 0 20px;
+}
+
+p {
+    /* padding: 0 20px; */
+}
+
+.foto-donate {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px 15px 0 0;
+}
+
+.grouping1 {
+    display: flex;
+    position: relative;
+}
+
+.donation-side {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+
+

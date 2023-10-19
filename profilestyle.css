@@ -1,0 +1,153 @@
+@import url('homestyle.css');
+
+
+/* PROFILE CONTAINER */
+.profile-img{
+    width: 50px;
+    padding: 5px 15px;
+}
+
+.info-container{
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    /* background-color: antiquewhite; */
+    height: 1000px;
+}
+
+.profile-container{
+    background-color: rgb(233, 233, 233);
+    width: 500px;
+    height: 320px;
+}
+
+.profile-section{
+    margin-left: 15px;
+}
+
+.profile-sub{
+    margin-top: 40px;
+}
+
+.profile-container-img{
+    width: 180px;
+    margin-left: 15px;
+}
+
+.profile-name{
+    position: relative;
+    bottom: 160px;
+    left: 220px;
+}
+
+.verified-icon{
+    position: relative;
+    bottom: 225px;
+    left: 420px;
+}
+
+.edit-button{
+    position: relative;
+    bottom: 220px;
+    left: 220px;
+    color: #0457C0;
+    border-color:  #0457C0;
+    border-style: solid;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+
+/* DONATION */
+.donation-container{
+    position: relative;
+    bottom: 335px;
+    left: 600px;
+    background-color: rgb(233, 233, 233);
+    width: 1200px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.donation-section{
+    margin-left: 20px;
+    position: relative;
+    top: 40px;
+}
+
+.total-donation{
+    margin-left: 20px;
+    position: relative;
+    top: 20px;
+    color: #0457C0;
+    font-size: 40px;
+}
+
+.verification-section{
+    margin-left: 20px;
+    position: relative;
+    top: 40px;
+    font-style: 25px;
+}
+
+.verification-detail{
+    margin-left: 20px;
+    position: relative;
+    bottom: 40px;
+}
+
+.verif-icon{
+    position: relative;
+    bottom: 25px;
+    left: 430px;
+}
+
+
+/* HISTORI */
+.histori{
+    position: relative;
+    bottom: 300px;
+    display: flex;
+}
+
+.dropdown{
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.riwayat-container{
+    position: relative;
+    bottom: 260px;
+    display: flex;
+    background-color: rgb(233, 233, 233);
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.riwayat-content-projek{
+    width: 400px;
+    margin-left: 20px;
+}
+
+.riwayat-content{
+    margin-right: 20px;
+}
+
+.metode{
+    width: 120px;
+   
+}
+
+.blue{
+    color: #0457C0;
+    font-size: 25px;
+}

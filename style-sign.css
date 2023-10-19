@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFFCFC;
+    font-size: 15px;
+    font-weight: 450;
+}
+
+/* header img {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #0457C0;
+    position: sticky;
+    top: 0;
+}
+
+.logo img {
+    width: 8.75rem;
+}
+
+menu ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+.menu_item li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.current_page a {
+    color: #F9E14C;
+}
+
+.right_menu a{
+    padding: 5px 15px;
+}
+
+.cta_signup{
+    border: solid 1.5px;
+    border-color: #F9E14C;
+    border-radius: 20px;
+    color: #F9E14C;
+}
+
+.cta_signup:hover{
+    background-color: #5f99e4;
+}
+
+.cta_signup a{
+    padding: 10px 10px;
+}
+
+footer {
+    background-color: #0457C0;
+    padding: 50px 20px 5px 20px;
+}
+
+footer p {
+    color: #FFFCFC;
+    /* font-weight: 100; */
+/* } */
+
+
+/* main */
+
+main {
+    display: flex;
+    /* margin: 20px; */
+    /* padding: 10px; */
+}
+
+.left-container1, .left-container2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.left-container1{
+    background-image: url(assets/signup.png);
+}
+
+.left-container2{
+    background-image: url(assets/signin.png);
+}
+
+.left-logo{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.left-text{
+    margin-top: 75px;
+    font-size: 40px;
+    color: yellow;
+    font-weight: 520;
+    text-align: center;
+}
+
+.right-container, .right-container2 {
+    height: 100vh;
+    width: 100%;
+    margin-left: 120px;
+}
+
+
+h1{
+    margin-top: 30px;
+    font-size: 35px;
+    font-weight: 900;
+    color: #0457C0;
+}
+
+.errorMessage{
+    color: black;
+}
+
+h2{
+    margin-top: 60px;
+    font-size: 35px;
+    font-weight: 900;
+    color: #0457C0;
+}
+
+/* form{
+    padding: 20px;
+} */
+
+form input{
+    outline: none;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 5px 10px;
+}
+
+form input:focus{
+    /* border: 1px solid black; */
+    background-color: #fafafa;
+}
+
+.form-input-box{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 100px; */
+    padding-top: 5px;
+}
+
+.form-input-box small{
+    font-size: 8px;
+    color: red;
+    align-self: end;
+    visibility: hidden;
+}
+
+.form-input-box.error small{
+    visibility: visible;
+}
+
+.form-input-selectbox{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: flex;
+    width: 71%;
+    padding-top: 20px;
+    position: relative;
+}
+
+.form-input-selectbox .icon-container{
+    width: 40px;
+height: 50%;
+position: absolute;
+right: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.icon-container i{
+    font-size: 15px;
+}
+
+select{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 0 10px 0 10px;
+    appearance: none;
+}
+
+.form-input-selectbox > * {
+    margin-right: 10px;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+button{
+    color: white;
+    background-color: #0457C0;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin-top: 30px;
+    width: 35%;
+    height: 45px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover{
+    background-color: #2773d7;
+    cursor: pointer;
+}
+
+.login-text, .login-text-2{
+    display: flex;
+    margin-top: 7px;
+}
+
+.login-text > * , .login-text-2{
+    margin: 5px;
+  }
+
+.login-text a{
+    text-decoration: none;
+    color: black;
+}
+
+.login-text a:hover{
+    text-decoration: underline;
+}
+
+.login-text-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.checkforget-container{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 20px;
+}
+
+/* .form-input-checkbox input{
+    margin-top: 15px;
+    width: 15px;
+    height: 15px;
+} */
+
+
+.lupapassword a{
+    text-decoration: none;
+}
+
+.lupapassword a:hover{
+    text-decoration: underline;
+}
+
+
+
+.third-party-container > * {
+    margin-right: 15px;
+  }
+
+hr {
+    color: #0457C0;
+    width: 40%;
+    height: 1.5px;
+    margin-top: 15px;
+    margin-left: 6px;
+    background-color: #0457C0;
+    border: 0 none;
+ }

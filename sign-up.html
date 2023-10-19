@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejuta Hati</title>
+    <link rel="icon" type="image" href="assets/sejutahati-up.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style-sign.css">
+</head>
+<body>
+
+    <div class="page_container">
+      
+        <main>
+            <div class="left-container1">
+              
+                <div class="left-logo">
+                    <img src="assets/sejutahati-up.png" alt="Logo SejutaHati" height="70px">
+                </div>
+
+                <p class="left-text">Bergabunglah <br>
+                    bersama kami <br>
+                    dan mari kita <br>
+                    tanam kebaikan <br>
+                    bersama.</p>
+               
+            </div>
+            
+            <div class="right-container">
+                <h1>Sign Up</h1>
+                <form id="form" action="sign-in.html">
+                    <div class="form-input">
+                        <div class="form-input-box namalengkap-field">
+                            <label for="namalengkap">Nama Lengkap</label>
+                            <input type="text" id="namalengkap">
+                            <small>Error message</small>
+                        </div>
+
+                        <div class="form-input-box notelepon-field">
+                            <label for="notelepon">No Telepon</label>
+                            <input type="text" id="notelepon">
+                            <small>Error message</small>
+                        </div>
+
+                        <div class="form-input-selectbox">
+                            <label for="negara">Negara</label>
+                            <select class="select-box" name="negara" id="negara">
+                                <option value="indonesia">Indonesia</option>
+                                <option value="malaysia">Malaysia</option>
+                                <option value="filipina">Filipina</option>
+                            </select>
+                            <div class="icon-container">
+                                <i class="fa fa-caret-down icon"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-input-box email-field">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email">
+                            <small>Error message</small>
+                        </div>
+
+                        <div class="form-input-box password-field">
+                            <label for="password">Password</label>
+                            <input type="password" id="password">
+                            <small>Error message</small>
+                        </div>
+
+                        <div class="form-input-box konfirmpassword-field">
+                            <label for="konfirmpassword">Konfirmasi Password</label>
+                            <input type="password" id="konfirmpassword">
+                            <small>Error message</small>
+                        </div>
+
+                        <div class="button">
+                            <button type="submit">Sign Up</button>
+                        </div>
+
+                    </div>
+                </form>
+                
+               
+                <div class="login-text">
+                    <p>Sudah punya akun?</p>
+                    <a href="sign-in.html">Ke Halaman Login</a>
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- <footer>
+            <p>&copy;2023 SejutaHati, All Rights Reserved</p> 
+        </footer> -->
+
+
+    </div>
+    
+    <script src="script-signup.js"></script>
+
+</body>
+</html>

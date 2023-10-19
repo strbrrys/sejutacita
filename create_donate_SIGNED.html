@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejuta Hati</title>
+    <link rel="icon" href="assets/icon_logo.png" />    
+    <link rel="stylesheet" href="donatestyle.css">
+    <link href = "profilestyle.css" rel = "stylesheet">
+    <script src="scriptdonate2.js"></script>
+</head>
+<body>
+
+    <div class="page_container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="assets/logo.png" alt="SejutaHati Logo">
+                </div>
+                <div class="menu">
+                    <ul class="menu_item">
+                        <li><a href="home_SIGNED.html">Home</a></li>
+                        <li class="current_page"><a href="donate_SIGNED.html">Donate</a></li>
+                        <li><a href="forum_SIGNED.html">Forum</a></li>
+                    </ul>
+                </div>
+
+                <div class="right_menu">
+                    <div class="right-menu">
+                        <a href="profile.html">
+                          <img class = "profile-img" src = "assets/profile1.png">
+                        </a>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+
+        <main>
+            <form action="" onsubmit="return validateForm2()">
+
+                <div class="create-donate">
+
+                  <a href="donate.html">
+                      <img src="assets/backbtn.png" class="backbtn">
+                  </a>
+
+                  <p class="content-title-donate">Galang Dana</p>
+                  <p class="content-section3-feedback">
+                    Galang dana untuk semua yang membutuhkan! Di SejutaHati ada jutaan #OrangBaik yang berdonasi ke segala jenis galang dana tiap harinya.
+                  </p>
+            
+                  <br>
+                  <div class="create-form">
+                    <p class="title-donate">Data Diri</p>
+                  </div>
+                  <div class="form">
+                    <label class="lbl-form">Nama lengkap Sesuai KTP: </label>
+                    <input type="text" id="namaLengkap" placeholder="Nama Lengkap">
+                    <span id="namaLengkapError" class="error"></span>
+                    <br><br>
+                    <label class="lbl-form">Nomor Ponsel: </label>
+                    <input type="number" id="nomorPonsel" placeholder="Nomor Ponsel">
+                    <span id="nomorPonselError" class="error"></span>
+                    <br><br>
+                    <label class="lbl-form">Email: </label>
+                    <input type="email" id="email" placeholder="E-mail">
+                    <span id="emailError" class="error"></span>
+                  </div>
+            
+                  <div class="create-form">
+                    <br><br>
+                    <p class="title-donate">Data Penerima Dana</p> 
+                    <label class="lbl-form">Nama Penerima Donasi: </label>
+                    <input type="text" id="namaPenerima" placeholder="Nama Penerima">
+                    <span id="namaPenerimaError" class="error"></span>
+                    <br><br>
+                    <label class="lbl-form">Tujuan: </label>
+                    <input type="text" id="tujuan" placeholder="Isi tujuan galang dana">
+                    <span id="tujuanError" class="error"></span>
+                    <br><br>
+                    <label class="lbl-form">Lokasi: </label>
+                    <input type="text" id="lokasi" placeholder="Contoh: Kelurahan Mawar, Kecamatan Puri, Kota Tangerang">
+                    <span id="lokasiError" class="error"></span>
+                  </div>
+              
+            
+                  <div class="create-form">
+                    <br><br>
+                    <p class="title-donate">Tentang Donasi</p>
+                    <br><br>
+                    <label class="lbl-form">Judul Donasi:</label>
+                    <input type="text" id="judulDonasi" placeholder="Isi judul donasi">
+                    <span id="judulDonasiError" class="error"></span>
+                    <br><br>
+                    <label class="lbl-form">Kategori Donasi:</label>
+                    <select id="kategoriDonasi">
+                      <option value="">Bencana</option>
+                      <option value="">Pendidikan & Beasiswa</option>
+                      <option value="">Kegiatan Sosial</option>
+                      <option value="">Rumah Ibadah</option>
+                      <option value="">Zakat</option>
+                      <option value="">Panti Asuhan</option>
+                    </select>
+                    <span id="kategoriDonasiError" class="error"></span>
+                    <br><br>
+                    <label class="lbl-form">Cerita Donasi:</label>
+                    <textarea id="ceritaDonasi" cols="40" rows="5" placeholder="Ceritakan tentang penggalangan Anda dengan lengkap"></textarea>
+                    <span id="ceritaDonasiError" class="error"></span>
+                    <br><br>
+                    <label class="lbl-form">Target Dana:</label>
+                    <input type="number" id="targetDana" placeholder="Tentukan Target Dana Rp. ">
+                    <span id="targetDanaError" class="error"></span>
+                  </div>
+                  <br><br>
+                  <button class="button-donate">Submit</button>
+                </div>
+              </form>
+        </main>
+
+        <footer>
+            <p>&copy;2023 SejutaHati, All Rights Reserved</p> 
+        </footer>
+
+
+    </div>
+    
+</body>
+</html>

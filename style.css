@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFFCFC;
+}
+
+header img {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #0457C0;
+    position: sticky;
+    top: 0;
+}
+
+.logo img {
+    width: 8.75rem;
+}
+
+menu ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+.menu_item li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.current_page a {
+    color: #F9E14C;
+}
+
+.right_menu a{
+    padding: 5px 15px;
+}
+
+.cta_signup{
+    border: solid 1.5px;
+    border-color: #F9E14C;
+    border-radius: 20px;
+    color: #F9E14C;
+}
+
+.cta_signup:hover{
+    background-color: #5f99e4;
+}
+
+.cta_signup a{
+    padding: 10px 10px;
+}
+
+footer {
+    background-color: #0457C0;
+    padding: 50px 20px 5px 20px;
+}
+
+footer p {
+    color: #FFFCFC;
+    /* font-weight: 100; */
+}
+
+/* main */
+
+main {
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+}
+
+.discussion {
+    margin-right:auto;
+}
+
+    /* filter */
+.filter {
+    max-width: 15em;
+    position: relative;
+    margin: 2em 0 2em 1em;
+}
+
+.filter * {
+    box-sizing: border-box;
+}
+
+.select {
+    /* background: #26489a; */
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1.5px #000000 solid;
+    /* border-radius: 0.5em; */
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+    /* clicked styles -> added later js*/
+
+/* .select-clicked {
+    border: 2px #26489a solid ;
+    box-shadow: 0 0 0.8em #26489a;
+} */
+
+.select:hover {
+    /* background: #F9E14C; */
+    box-shadow: 0 0 0.3em #bfbfc0
+}
+
+.caret {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #000000;
+    transition: 0.3s;
+}
+
+    /* rotate styles */
+.caret-rotate {
+    transform: rotate(180deg);
+}
+
+.filter_menu {
+    list-style-type: none;
+    padding: 0.2em 0.5em;
+    background: #366cb4;
+    border: 1px #0457C0 solid;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: #ffffff;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.filter_menu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.filter_menu li:hover {
+    background: #5f99e4;
+}
+
+    /* active style */
+.active {
+    background: #87bbff;
+}
+
+    /* open styles */
+.filter_menu-open {
+    display: block;
+    opacity: 1;
+
+}
+
+.content_popular {
+    display: none;
+}
+
+/* discussion posts */
+.forum {
+    background-color: #F9F9F9;
+    padding: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+.forum:hover {
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+}
+
+.forum_text {
+    width: 55em;
+}
+
+.profpic {
+    display: flex;
+    align-items: center;
+}
+
+.profpic img{
+    width: 2em;
+    height: 2em;
+    margin-right: .75em;
+}
+
+.profpic p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.forum_text h1 {
+    font-size: 16px;
+    margin-bottom: 0em;
+}
+
+.forum_text p {
+    font-size: 14px;
+    /* margin-bottom: 0.5em; */
+}
+
+.likes_coms {
+   display: flex;
+}
+.likes_btn span, .coms_btn span {
+    font-size: 14px;
+}
+
+.likes_btn {
+    margin-right: 1em;
+    margin-left: auto;
+    /* border: 2px solid red; */
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: flex;
+    cursor: pointer;
+}
+
+.likes_btn:hover {
+    background-color: #f4cbcb;
+}
+
+.heart img{
+    width: 1.25em;
+}
+.like {
+    margin-left: .5em;
+    margin-right: .25em;
+}
+
+
+.coms_btn {
+    /* border: 2px solid red; */
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: flex;
+    cursor: pointer;
+}
+
+.coms_btn:hover {
+    background-color: #cbddf4;
+    
+}
+
+.com {
+    margin-left: .5em;
+    margin-right: .25em;
+}
+
+/* trending & start discussion */
+.create_post_btn {
+    margin: 2em 0 2em 0;
+    background-color: #0457C0;
+    padding: 18px 45px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.create_post_btn:hover {
+    background-color: #0049a8;
+}
+
+.sides  {
+    display: block;
+    margin-right: 1em;
+}
+
+.category {
+    background-color: #fde967;
+    padding: .5em;
+    border-radius:10px 10px 0 0 ;
+    text-align: center;
+    margin: 0;
+    border-bottom: 1.5px solid #0457C0;
+}
+
+.category h4 {
+    margin: .25em;
+    color: #0049a8;
+
+}
+
+.category_list {
+    background-color: #F9F9F9;
+    padding: .25em;
+    border-radius: 0 0 10px 10px;
+}
+
+.category_list ul li {
+    color: #0457C0;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.category_list li:hover {
+    color: #000000
+}
+
+/* comment section */
+.coms_section {
+    display: none;
+}
+
+.coms_top {
+    border-top: 1px solid #bfbfc0 ;
+    display: flex;
+    align-items: center;
+    padding: 1.5em;
+}
+
+.com_pp {
+    width: 2em;
+    height: 2em;
+    margin-right: .75em;
+}
+
+.com_body {
+    background-color: #e9f0f8;
+    padding: .5em;
+    border-radius: 10px;
+}
+.com_body p {
+    font-size: 14px;
+    margin: 0;
+}
+
+#com_like {
+    width: 1em;
+    height: 1em;
+    margin-left: .5em;
+}
+
+.coms_bottom {
+    display: flex;
+    padding: 0 1.5em;
+}
+
+#com_tf {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    padding: 1em;
+}
+
+#send_btn {
+    width: 1em;
+    height: 1em;
+    align-self: center;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+.profile-img{
+    width: 50px;
+    padding: 5px 15px;
+}

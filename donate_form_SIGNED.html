@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejuta Hati</title>
+    <link rel="icon" href="assets/icon_logo.png" />    
+    <link rel="stylesheet" href="donatestyle.css">
+    <link href = "profilestyle.css" rel = "stylesheet">
+    <script src ="scriptdonate.js"></script>
+</head>
+<body>
+
+    <div class="page_container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="assets/logo.png" alt="SejutaHati Logo">
+                </div>
+                <div class="menu">
+                    <ul class="menu_item">
+                        <li><a href="home_SIGNED.html">Home</a></li>
+                        <li class="current_page"><a href="donate_SIGNED.html">Donate</a></li>
+                        <li><a href="forum_SIGNED.html">Forum</a></li>
+                    </ul>
+                </div>
+
+                <div class="right-menu">
+                    <a href="profile.html">
+                      <img class = "profile-img" src = "assets/profile1.png">
+                    </a>
+                </div>
+            </div>
+
+            </nav>
+        </header>
+
+        <main>
+            <div class="donate">
+                <div class="article-donate">
+                    <h3 class="h3-donate-form">Kategori Projek Donasi: #Pendidikan</h3>
+                    <img src="assets/donate3.jpg" alt="" class="image-donate">
+                    <h3 class="h3-donate-form">Kami Membutuhkan Bantuan Anda Untuk Menciptakan Pendidikan Yang Berkualitas</h3>
+                    <label for="" class="lbl-date">25 Februari 2023</label>
+                    <p class="content-paragraph-donate">Untuk mempercepat pemerataan pendidikan di Indonesia, 
+                    Kamu bisa menggalang dana untuk bangun sekolah, pesantren ataupun taman belajar di daerah pelosok nusantara. 
+                    Biasanya alasan anak di daerah terpencil tidak mendapat pendidikan yang layak karena akses menuju sekolah yang 
+                    terlampau jauh dan ditambah medan yang sulit ditempuh. Karena itulah, membangun sekolah di pelosok bisa menjadi 
+                    salah satu solusi agar mereka juga bisa menerima haknya mendapatkan pendidikan yang setara dengan anak Indonesia 
+                    lainnya.
+                    </p>
+                    
+                    <br><br>
+                        <a href="donate_SIGNED.html">
+                        <button class="button-donate">Back To Donate</button>
+                        <br><br>
+                        </a>
+
+                </div>
+            
+                <div class="form-donate">
+                    <h2 class="h2-donate">Donasi Sekarang!</h2>
+                    <br><br>
+                    <form action="" onsubmit="return validateForm()">
+                        <label class="lbl-form">Nama lengkap:</label>
+                        <input type="text" id="nama" placeholder="Nama Lengkap">
+                        <span id="namaError" class="error"></span>
+                    
+                        <br><br>
+                    
+                        <label class="lbl-form">Nomor Ponsel:</label>
+                        <input type="number" id="nomorPonsel" placeholder="Nomor Ponsel">
+                        <span id="nomorPonselError" class="error"></span>
+                    
+                        <br><br>
+                    
+                        <label class="lbl-form">Email:</label>
+                        <input type="email" id="email" placeholder="E-mail">
+                        <span id="emailError" class="error"></span>
+                    
+                        <br><br>
+                    
+                        <label class="lbl-form">Metode Pembayaran:</label>
+                        <select id="metodePembayaran">
+                            <option value="">GoPay</option>
+                            <option value="">ShopeePay</option>
+                            <option value="">DANA</option>
+                            <option value="">Virtual Account</option>
+                        </select>
+                        <span id="metodePembayaranError" class="error"></span>
+                    
+                        <br><br>
+                    
+                        <label class="lbl-form">Nominal Pembayaran:</label>
+                        <input type="number" id="nominalPembayaran" placeholder="Nominal Pembayaran">
+                        <span id="nominalPembayaranError" class="error"></span>
+                    
+                        <br><br>
+                    
+                        <label class="lbl-form">Pesan Spesial:</label>
+                        <textarea id="pesanSpesial" cols="40" rows="5" placeholder="Masukkan Pesan Spesial"></textarea>
+                        <span id="pesanSpesialError" class="error"></span>
+                    
+                        <br><br>
+                    
+                        <button type="submit" class="button-donate center">Submit</button>
+                        <br><br>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy;2023 SejutaHati, All Rights Reserved</p> 
+        </footer>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
